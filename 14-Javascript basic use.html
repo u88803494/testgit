@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <mtea charset="utf-8" />
+    <title></title>
+    <script type="text/JavaScript">
+    //內建函式
+    //alert("hello world");
+    //函式的基礎
+    //設計階段
+    /*
+    function add(n1,n2) {
+        // 函式的本體
+        alert(n1+n2);
+        return n1+n2;//函式結束 函式回傳 回傳到呼叫的位置
+    }*/
+    //呼叫/使用階段
+    /*
+    var result=add(3,4)*add(10,20);
+    alert(result);
+    */
+    //整合示範
+    function getSum(max){
+    var sum=0;
+    var n=1;
+    while(n<=max){
+        sum+=n;
+        n++;
+    }
+    alert(sum)
+    return sum;
+    }
+    var result=getSum(50)*getSum(150);
+    alert(result);
+    </script>
+</head>
+<body >
+    
+</body>
+</html>

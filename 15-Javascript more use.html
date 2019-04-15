@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<mtea charset="utf-8" />
+<title>JavaScript Function</title>
+<script type="text/javascript">
+// 函式的變形，函式是一種資料
+/*function add(n1,n2) {
+    alert(n1+n2);
+}*/
+/*
+var add=function(n1,n2) {
+    alert(n1+n2);
+}//函式是一種資料 可以放進變數裡
+add(31,15);
+var test=add;//沒有對函式坐呼叫 則這邊的add代表函式本體
+test(10,20);
+*/
+/*
+var x=3;
+x="string";
+x=function(){alert("hello world");};
+*/
+// 函式創造新的名稱空間
+var x=3; //全域空間，全域變數
+function test() {
+    var y=5; //區域空間，區域變數
+    //var x=9;
+    alert(x+y);
+} //函式的內部空間是一個私有(額外)的名稱空間,如果內部沒有對應的變數,就會往外面找
+//test();
+alert(x);
+// 外部的程式碼，不能使用內部的變數，內部的則可以往外面找變數。
+</script>
+</head>
+<body >
+    
+</body>
+</html>
